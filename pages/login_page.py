@@ -11,7 +11,7 @@ class loginForm():
     def load(self,url):
         self.driver.get(url)
 
-    def filForm(self,username,password):
+    def fillForm(self,username,password):
         self.driver.find_element(*self.username_input).send_keys(username)
         self.driver.find_element(*self.passwd_input).send_keys(password)
         self.driver.find_element(*self.btn).click()
