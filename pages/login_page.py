@@ -4,9 +4,9 @@ from selenium.webdriver.common.by import By
 class loginForm():
     def __init__(self,driver):
         self.driver = driver
-        self.username_input = (By.ID,"")
-        self.passwd_input = (By.ID,"")
-        self.btn = (By.ID,"")
+        self.username_input = (By.ID,"username")
+        self.passwd_input = (By.ID,"password")
+        self.btn = (By.ID,"sumit")
 
     def load(self,url):
         self.driver.get(url)
