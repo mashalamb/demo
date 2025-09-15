@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 class loginForm():
     def __init__(self,driver):
-        driver = self.driver
+        self.driver = self.driver
         self.username_input = (By.ID,"")
         self.passwd_input = (By.ID,"")
         self.btn = (By.ID,"")
