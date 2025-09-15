@@ -6,7 +6,7 @@ class loginForm():
         self.driver = driver
         self.username_input = (By.ID,"username")
         self.passwd_input = (By.ID,"password")
-        self.btn = (By.ID,"sumit")
+        self.btn = (By.ID,"submit")
 
     def load(self,url):
         self.driver.get(url)
